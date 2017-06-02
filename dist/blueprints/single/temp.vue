@@ -1,15 +1,15 @@
-<template lang="{{filesType.html}}">
-  section.{{name | kebabCase}}
+<template lang="pug">
+  .{{name | kebabCase}}
 </template>
 
 <script>
-  export default  {
+  export default {
     name: '{{name | kebabCase}}',
     props: [],
-    mounted() {
+    mounted () {
 
     },
-    data() {
+    data () {
       return {
 
       }
