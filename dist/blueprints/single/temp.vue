@@ -1,15 +1,8 @@
 <template lang="{{filesType.html}}">
-{% if filesType.html === 'jade' || filesType.html === 'pug' %}
-  section(class="{{name | kebabCase}}")
-    h1 {{name | kebabCase}} Component
-{% else %}
-  <section class="{{name | kebabCase}}">
-    <h1>{{name | kebabCase}} Component</h1>
-  </section>
-{% endif %}
+  section.{{name | kebabCase}}
 </template>
 
-<script lang="{{ filesType.js }}">
+<script>
   export default  {
     name: '{{name | kebabCase}}',
     props: [],
@@ -30,8 +23,6 @@
 }
 </script>
 
-<style scoped lang="{{ filesType.style }}">
-  .{{name | kebabCase}} {
+<style lang="stylus" scoped>
 
-  }
 </style>
